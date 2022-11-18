@@ -1,6 +1,6 @@
 from flask import Flask,render_template,request
 app = Flask(__name__)
-@app.route("/imc", methods=["GET","POST"])
+@app.route("/", methods=["GET","POST"])
 def imc():
     imc=0
     if request.method=='POST' and 'peso' in request.form and 'altura' in request.form:
